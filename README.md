@@ -34,3 +34,6 @@ Examples
 ---------
 
 Check the examples folder for more details
+
+* [Example 1](examples/example01.md)
+* [Example 2](examples/example02.md)
