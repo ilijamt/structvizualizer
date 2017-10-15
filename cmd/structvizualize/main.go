@@ -31,7 +31,8 @@ func main() {
 	}
 
 	assembler.Parse()
-	assembler.Template()
+	assembler.Template(os.Stdout)
+
 	//assembler.Dump()
 
 }

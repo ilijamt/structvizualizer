@@ -22,6 +22,12 @@ func (o *Object) AddLabel(field ObjectField) {
 	if field.IsEmbedded() {
 		tp = "embd: "
 	}
+	if field.IsPrimitive() {
+		tp = ""
+	}
+	if field.IsFunction() {
+		tp = "func: "
+	}
 	o.Label = append(o.Label, fmt.Sprintf("{%s%s}", tp, field.GetName()))
 }
 
